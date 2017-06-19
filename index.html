@@ -1,79 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>FOTOLOG - ..::ÁrÉnItÁ .´´´ ÁmíGáS x CrÉw::..</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <title>FOTOLOG - ..::ÁrÉnItÁ .´´´ ÁmíGáS x CrÉw::..</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 logo">
-					<img src="img/fotolog-logo.png" alt="">
-				</div>
-			</div>
-		</div>
-	</header>
-	<section id="bannerflog">
-		<div class="container">
-			<div class="col-md-12 text-center">
-				<h1>..::ÁrÉnItÁ .´´´ ÁmíGáS x CrÉw::..</h1>
-			</div>
-		</div>
-	</section>
-	<section id="contenido">
-		<div class="container">
-			<div class="col-md-2 recientes">
-				<a href="" class="fotos">Fotos Recientes</a>
-				<img src="img/jarcor.jpg">
-				<img src="img/foto_0920140822124434.jpg" alt="">
-				<img src="img/i-62869.jpeg" alt="">
-				<img src="img/p3.jpg" alt="">
-			</div>
-			<div class="col-md-8">
-				<img src="img/m1_768_11MS.jpg" alt="">
-				<p>AqUi EStAáá Mi AmIgA ArEnItAáÁÁ</p>
-			</div>
-			<div class="col-md-2 recientes">
-				<a href="" class="fotos">Fotos Recientes</a>
-				<img src="img/jarcor.jpg">
-				<img src="img/foto_0920140822124434.jpg" alt="">
-				<img src="img/i-62869.jpeg" alt="">
-				<img src="img/p3.jpg" alt="">
-			</div>
-		</div>
-	</section>
-	<section class="formulario">
-		<div class="container" id="caja">
-			<div class="row">
-				<div class="col-md-offset-3 col-md-6">
-					<form Name="formulario">
-						<h3>Nombre</h3>
-						<input type="text" id="clave">
-						<h3>Comentario</h3>
-						<textarea id="valor"></textarea>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="container">
-		<div class="row">
-			<div class="col-md-offset-3 col-md-6">
-				<div id="ale"></div>
-			</div>
-		</div>
-	</section>
-	<footer>
-		<div class="row">
-			<div class="col-md-12">
-				<p class="text-center">Laboratoria 2017</p>
-			</div>
-		</div>
-	</footer>
-	<script src="js/main.js"></script>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 logo">
+                    <img src="img/fotolog-logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="bannerflog">
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <h1>..::ÁrÉnItÁ .´´´ ÁmíGáS x CrÉw::..</h1>
+            </div>
+        </div>
+    </section>
+    <section id="contenido">
+        <div class="container">
+            <div class="col-md-2 recientes">
+                <a href="" class="fotos">Fotos Recientes</a>
+                <img src="img/jarcor.jpg">
+                <img src="img/foto_0920140822124434.jpg" alt="">
+                <img src="img/i-62869.jpeg" alt="">
+                <img src="img/p3.jpg" alt="">
+                <img src="" alt="">
+            </div>
+            <div class="col-md-8">
+                <img src="img/m1_768_11MS.jpg" alt="">
+                <p>AqUi EStAáá Mi AmIgA ArEnItAáÁÁ</p>
+            </div>
+            <div class="col-md-2 recientes">
+                <a href="" class="fotos">Fotos Recientes</a>
+                <img src="img/jarcor.jpg">
+                <img src="img/foto_0920140822124434.jpg" alt="">
+                <img src="img/i-62869.jpeg" alt="">
+                <img src="img/p3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="formulario">
+        <div class="container" id="caja">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6 col-xs-12">
+                    <form Name="formulario">
+                        <h3>Nombre</h3>
+                        <input type="text" id="nombre" class="input-text">
+                        <h3>Comentario</h3>
+                        <textarea id="comentario" class="input-text"></textarea>
+                        <!-- Agregamos boton para dejar el comentario -->
+                        <div class="btn-comment">
+                            <button id="btn-guardar" type="button" class="btn btn-default">Guardar</button>
+                            <button id="btn-limpiar" type="button" class="btn btn-default">Limpiar datos</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COMENTARIOS DE FOTOLOG -->
+    <section class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6 col-xs-12">
+                <div id="contenido-post">
+                    <!--AGREGANDO COMENTARIOS-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <p class="text-center white-text">Laboratoria 2017</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>
